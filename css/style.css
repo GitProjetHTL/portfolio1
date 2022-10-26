@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:rgba(0, 255, 255, 0.7); ;
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;
+    
+}
+
+body{
+    background-image: url(../img/futur-bg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+    
+}
+/* center le header et background */
+header{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.7)
+}
+/* grandir la dont de h1 + le padding */
+h1{
+    padding: 2rem;
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+/*  style concerne la nav bar */
+.navBar ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding:1rem;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1rem;
+
+}
+.navBar ul li{
+    background-color: rgba(0, 0, 0, 0.7);
+    margin:1rem;
+    border-radius: 10%;
+    padding: 1rem 4rem;
+    list-style-type: none;
+    text-decoration: none;
+    
+    transition: all 2s;
+    color:rgba(0, 255, 255, 0.7);
+    
+}
+
+.navBar ul li:hover{
+    background-color: rgba(0, 255, 255, 0.7);
+    scale: 1.3;
+}
+/* Fin style concerne la nav bar */
+/* style du main index.html */
+main{
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    min-height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10%;
+}
+.content{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.content p{
+    padding: 1rem;
+}
+.logoHTML{
+    width: 50%;
+}
+/*  fin style du main index.html */
+/* debut footer */
+footer{
+    position: absolute;
+    width: 100%; height: auto;
+    bottom: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+/*  fin footer */
+/* style concernant les contacts */
+
+h3{
+    text-decoration: underline;
+    font-size: 1rem;
+    
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+#name, #firstname, #email, #comment, #submit, #reset{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#submit, #reset{
+    padding: 0.5rem 2rem;
+}
+
+/*Fin style concernant les contacts */
+
+a{
+    text-decoration: none;
+}
+
+/* responsive */
+@media  (max-width:768px){
+    .logoHTML{
+        width: 50%;
+    }
+    .navBar ul li{
+        font-size: 0;
+    }
+    .navBar ul{
+        display:block;
+    }
+    main{
+        width: 50%;
+        padding: 0;
+    }
+    footer{
+        text-align: center;
+    }
+    h1{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (min-device-width : 768px) and (max-device-width : 1024px) {
+    main{
+        width: 80%;
+        padding: 0
+    }
+    .formulaire{
+        display: block;
+    }
+}
+
+@media (max-device-width : 1025px) {
+    main{
+        width: 80%;
+        padding: 0
+    }
+
+}
+
+/* animation CSS */
+
+.murGauche
+{
+    position: absolute;
+    left: 0;
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    height: 100%;
+}
+
+.murDroite
+{
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50%;
+    height: 100%;
+}
+    
+
+.murHaut{
+    position: absolute;
+    top: 0;
+
+    background-color:black;
+    
+    width: 100%;
+    height: 50%;
+
+
+}
+
+.murBas{
+    position: absolute;
+    bottom: 0;
+    
+    background-color:black;
+
+    width: 100%;
+    height: 50%;
+
+}
